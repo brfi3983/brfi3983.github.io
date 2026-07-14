@@ -1,41 +1,48 @@
 ---
 title: Projects
-eyebrow: Research software
+eyebrow: 03 / Research software
 subtitle: Models, pipelines, and numerical experiments.
-wide: true
 permalink: /projects/
 ---
 
-<div class="grid" markdown="0">
-  <div class="card reveal">
-    <span class="tag">Ice flow</span>
-    <h3>IGM modules</h3>
-    <p>Subglacial hydrology, sediment transport, and erosion modules for the Ice-sheet and Glacier Model — TensorFlow-based and GPU-accelerated.</p>
-    <a class="card-link" href="#">Repository →</a>
+<section class="section" style="padding-top: 3rem;" markdown="0">
+  <div class="work-list">
+
+    <a class="work-row" href="#">
+      <span class="work-num">001</span>
+      <span class="work-title">IGM modules</span>
+      <span class="work-tag">Ice flow · GPU</span>
+      <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      <p class="work-desc">Subglacial hydrology, sediment transport, and erosion modules for the Ice-sheet and Glacier Model — TensorFlow-based and GPU-accelerated.</p>
+    </a>
+
+    <a class="work-row" href="#">
+      <span class="work-num">002</span>
+      <span class="work-title">SBP processing pipeline</span>
+      <span class="work-tag">Geophysics</span>
+      <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      <p class="work-desc">SEG-Y visualization and matched-filter processing for chirp sub-bottom profiler data, with publication-quality output.</p>
+    </a>
+
+    <a class="work-row" href="#">
+      <span class="work-num">003</span>
+      <span class="work-title">Variational ice flow solvers</span>
+      <span class="work-tag">Numerics · ML</span>
+      <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      <p class="work-desc">Deep Ritz and trust-region methods for the Blatter–Pattyn equations, benchmarked against ISMIP-HOM.</p>
+    </a>
+
+    <a class="work-row" href="#">
+      <span class="work-num">004</span>
+      <span class="work-title">Fjord bathymetry interpolation</span>
+      <span class="work-tag">Geostatistics</span>
+      <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+      <p class="work-desc">Kriging and co-kriging of sparse survey lines for seafloor and sediment horizon mapping.</p>
+    </a>
+
   </div>
 
-  <div class="card reveal d1">
-    <span class="tag earth">Geophysics</span>
-    <h3>SBP processing pipeline</h3>
-    <p>SEG-Y visualization and matched-filter processing for chirp sub-bottom profiler data, with publication-quality output.</p>
-    <a class="card-link" href="#">Repository →</a>
-  </div>
-
-  <div class="card reveal d2">
-    <span class="tag">Numerics</span>
-    <h3>Variational ice flow solvers</h3>
-    <p>Deep Ritz and trust-region methods for the Blatter–Pattyn equations, benchmarked against ISMIP-HOM.</p>
-    <a class="card-link" href="#">Repository →</a>
-  </div>
-
-  <div class="card reveal d3">
-    <span class="tag earth">Geostatistics</span>
-    <h3>Fjord bathymetry interpolation</h3>
-    <p>Kriging and co-kriging of sparse survey lines for seafloor and sediment horizon mapping.</p>
-    <a class="card-link" href="#">Repository →</a>
-  </div>
-</div>
-
-<p style="margin-top:2.5rem; color: var(--ink-soft);" markdown="0">
-  To add a project, duplicate one of the <code>&lt;div class="card"&gt;</code> blocks above — tag, title, one-line description, link.
-</p>
+  <p style="margin-top: 3rem; color: var(--dim); font-size: 0.9rem;">
+    To add a project, duplicate a <code style="background: var(--bg-2); border: 1px solid var(--line); padding: 0.1em 0.4em; border-radius: 6px;">work-row</code> block — number, title, tag, link, one-line description.
+  </p>
+</section>
