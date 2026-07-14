@@ -1,17 +1,15 @@
 ---
-title: Visualization
+title: Scientific visualization
+eyebrow: Interactive
+subtitle: 3D models, equations, and small interactive tools.
 permalink: /visualization/
 ---
 
-<p class="eyebrow">Scientific visualization</p>
-
-# Scientific visualization
-
-Interactive figures and 3D models. The layout already loads Google's `<model-viewer>` and MathJax on every page, so both can be dropped straight into Markdown.
+The layout loads Google's `<model-viewer>` and MathJax on every page, so both drop straight into Markdown.
 
 ## Interactive 3D model
 
-Drag to rotate, scroll to zoom. Replace `src` with a path to your own `.glb` file (e.g. `/assets/models/glacier.glb`) — a glacier surface, fjord bathymetry, or anything exported from Blender or ParaView.
+Drag to rotate, scroll to zoom. Replace `src` with your own `.glb` (e.g. `/assets/models/glacier.glb`) — glacier surfaces, fjord bathymetry, anything exported from Blender or ParaView.
 
 <model-viewer
   src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
@@ -23,15 +21,15 @@ Drag to rotate, scroll to zoom. Replace `src` with a path to your own `.glb` fil
 
 ## Math rendering
 
-Display math works out of the box, e.g. the shallow-ice approximation:
+Display math works out of the box — the shallow-ice flux, for instance:
 
 $$
-q = -\frac{2A(\rho g)^n}{n+2}\, H^{n+2} \,|\nabla s|^{n-1}\nabla s
+q = -\frac{2A(\rho g)^n}{n+2}\, H^{n+2}\, |\nabla s|^{n-1}\nabla s
 $$
 
-## Embedded React (optional)
+## Embedded React
 
-For small interactive widgets, React can be loaded inline on any page. This example is a working slider — swap the logic for your own tool later.
+Small interactive widgets can be built with React loaded inline on any page — no build step. This slider is a working example; swap the logic for your own tool.
 
 <div id="react-demo"></div>
 
@@ -43,10 +41,11 @@ For small interactive widgets, React can be loaded inline on any page. This exam
   function Demo() {
     const [n, setN] = useState(3);
     return h('div', { className: 'card' },
-      h('h3', null, 'Glen flow-law exponent'),
+      h('span', { className: 'tag' }, 'Interactive'),
+      h('h3', null, "Glen flow-law exponent"),
       h('input', {
         type: 'range', min: 1, max: 5, step: 0.1, value: n,
-        style: { width: '100%' },
+        style: { width: '100%', accentColor: '#3D7E93' },
         onChange: e => setN(parseFloat(e.target.value))
       }),
       h('p', null, `n = ${n.toFixed(1)} — strain rate scales as stress`,

@@ -1,15 +1,13 @@
 ---
 title: About
+eyebrow: Who I am
+subtitle: Glaciologist, numerical modeler, occasional boat operator.
 permalink: /about/
 ---
 
-<p class="eyebrow">About</p>
+I'm Brandon Finley, a PhD researcher in glaciology. My work sits at the intersection of numerical modeling, high-performance computing, and marine geophysical fieldwork. Replace this paragraph with your own bio — this page is plain Markdown, so it stays easy to edit.
 
-# About me
-
-I'm Brandon Finley, a PhD researcher in glaciology. My work sits at the intersection of numerical modeling, high-performance computing, and marine geophysical fieldwork.
-
-Replace this text with your own bio — everything on this page is plain Markdown. You can also drop in math anywhere, inline like $N = p_i - p_w$ or as display blocks:
+Math renders anywhere, inline like $N = p_i - p_w$ or as display blocks:
 
 $$
 \frac{\partial h}{\partial t} + \nabla \cdot (h\,\bar{u}) = \dot{a}
@@ -22,8 +20,15 @@ $$
 - Glacial erosion and landscape evolution
 - Scientific machine learning for PDEs
 
+## Background
+
+Add education, positions, and publications here. A simple pattern that looks clean:
+
+**2023 – present** · PhD, Glaciology — Your University
+**2021 – 2023** · MSc, Earth Sciences — Your University
+
 ## Contact
 
 - Email: [you@brandonfinley.me](mailto:you@brandonfinley.me)
 - GitHub: [github.com/yourusername](https://github.com/yourusername)
-- ORCID / Scholar: add links here
+- ORCID / Google Scholar: add links here

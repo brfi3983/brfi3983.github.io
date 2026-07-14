@@ -4,12 +4,10 @@ description: Glaciology · Ice flow modeling · Scientific computing
 url: "https://brandonfinley.me"
 baseurl: ""
 
-# Build settings
 markdown: kramdown
 kramdown:
-  math_engine: mathjax   # leaves $$ ... $$ blocks alone so MathJax can render them
+  math_engine: mathjax
 
-# Default layout for all pages
 defaults:
   - scope:
       path: ""
